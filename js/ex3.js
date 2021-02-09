@@ -23,5 +23,4 @@ public static void main(String[] args) {
   System.out.println(num1 + " mod " + num2 + " = " + 
   (num1 % num2));
  }
- 
-}
+ console.log("Lindberg's Output from IS 645 HW3 Exercise 1");
