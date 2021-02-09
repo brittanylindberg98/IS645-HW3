@@ -11,6 +11,6 @@ public static void main(String[] args)
         if (password.equals(PASSWORD)) 
             System.out.println("You entered the correct password");
         else 
-            System.out.println("Your account is locked! You failed to enter the correct password # times: " + attempts);        
+            System.out.println(`Your account is locked! You failed to enter the correct password # times: ${attempts}`);        
     }
 }
