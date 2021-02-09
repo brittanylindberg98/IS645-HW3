@@ -55,3 +55,5 @@ console.log("Your grade standing is senior");
 }
 
 }
+
+console.log("Lindberg's Output from IS 645 HW3 Exercise 1");
