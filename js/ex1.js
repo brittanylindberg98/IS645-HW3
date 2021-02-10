@@ -1,59 +1,15 @@
-//to get the names from user input
+var username = prompt("Enter your name: ");
 
-var name=prompt("Enter name: ");
+var grade = parseInt(prompt("Enter number of units completed at the university: "));
 
-//to get the grade from user input and convert to integer
-
-var grade=parseInt(prompt("Enter grade"));
-
-//checki if input is less than 0 print as invalid
-
-if(grade<0){
-
-console.log("Invalid grade");
-
-}
-
-//else condition if its valid
+if(grade<0){ console.log("Invalid. Please re-enter")}
 
 else{
-
-//printing the name
-
-console.log("Hello "+name);
-
-//checkinf for the freshman condition
-
-if(grade>=0 && grade<=30){
-
-console.log("Your grade standing is Freshman");
-
+    console.log("Hello"+ username )
+    
+    if (grade >= 0 && grade <= 30 ) {console.log("Your grade standing is Freshman ")};
+    if (grade >= 31 && grade <= 60 ) {console.log("Your grade standing is Sophomore ")};
+    if (grade >= 61 && grade <= 90 ) {console.log("Your grade standing is Junior ")};
+    if (grade >= 91) {console.log("Your grade standing is Senior ")};
 }
-
-//checkinf from Sophomore condition
-
-if(grade>=31 && grade<=60){
-
-console.log("Your grade standing is Sophomore");
-
-}
-
-//checkinf for junior condtion
-
-if(grade>=61 && grade<=90){
-
-console.log("Your grade standing is Junior");
-
-}
-
-//checking for senior condition
-
-if(grade>=91){
-
-console.log("Your grade standing is senior");
-
-}
-
-}
-
 console.log("Lindberg's Output from IS 645 HW3 Exercise 1");
