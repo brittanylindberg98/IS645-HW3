@@ -1,40 +1,33 @@
+var DayEntered = prompt("Enter a day of the week: (sun, mon, tue, wed, thu, fri, and sat): ")
 
-public class FindNextPrevDay 
-{
-    private static final long MILLIS_IN_A_DAY = 1000 * 60 * 60 * 24;
-     
-    public static void main(String[] args) 
-    {
-        Date today = new Date();
-         
-        System.out.println("Today     :: " + findNextDay(today));
-        System.out.println("Next date :: " + findNextDay(today));
-        System.out.println("Prev date :: " + findPrevDay(today));
-         
-        LocalDate todayDate = LocalDate.now();
-         
-        System.out.println("Today     :: " + todayDate);
-        System.out.println("Next date :: " + findNextDay(todayDate));
-        System.out.println("Prev date :: " + findPrevDay(todayDate));
-    }
-     
-    private static Date findNextDay(Date date)
-    {
-        return new Date(date.getTime() + MILLIS_IN_A_DAY);
-    }
-     
-    private static Date findPrevDay(Date date)
-    {
-        return new Date(date.getTime() - MILLIS_IN_A_DAY);
-    }
-     
-    private static LocalDate findNextDay(LocalDate localdate)
-    {
-        return localdate.plusDays(1);
-    }
-     
-    private static LocalDate findPrevDay(LocalDate localdate)
-    {
-        return localdate.minusDays(1);
-    }
+var FollowingDay
+
+switch (DayEntered) {
+    case "mon":
+        FollowingDay = "tue";
+        break;
+    case "tue":
+        FollowingDay = "wed";
+        break;   
+    case "wed":
+        FollowingDay = "thu";
+        break;
+    case "thu":
+        FollowingDay = "fri";
+        break;
+    case "fri":
+        FollowingDay = "sat";
+        break;
+    case "sat" :
+        FollowingDay = "sun";
+        break;
+    case "sun":
+        FollowingDay = "mon";
+        break;
+    default:
+        console.log("invalid day entered");
+    
+
 }
+console.log("You entered: "+ DayEntered)
+console.log("The following day is: " + FollowingDay)
