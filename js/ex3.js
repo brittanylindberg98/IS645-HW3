@@ -1,26 +1,13 @@
-public static void main(String[] args) {
-  Scanner in = new Scanner(System.in);
-   
-  System.out.print("Input first number: ");
-  int num1 = in.nextInt();
-   
-  System.out.print("Input second number: ");
-  int num2 = in.nextInt();
-   
- 
-  System.out.println(num1 + " + " + num2 + " = " + 
-  (num1 + num2));
-   
-  System.out.println(num1 + " - " + num2 + " = " + 
-  (num1 - num2));
-   
-  System.out.println(num1 + " x " + num2 + " = " + 
-  (num1 * num2));
-   
-  System.out.println(num1 + " / " + num2 + " = " + 
-  (num1 / num2));
- 
-  System.out.println(num1 + " mod " + num2 + " = " + 
-  (num1 % num2));
- }
- console.log("Lindberg's Output from IS 645 HW3 Exercise 1");
+var num1 = parseInt(prompt("Please enter the first integer: "))
+
+var num2 = parseInt(prompt("Please enter the second integer: "))
+
+
+
+console.log(`${num1} + ${num2} = ${num1 + num2}`)
+console.log(`${num1} - ${num2} = ${num1 - num2}`)
+console.log(`${num1} * ${num2} = ${num1 * num2}`)
+console.log(`${num1} * ${num2} = ${num1 * num2}`)
+console.log(`${num1} / ${num2} = ${num1 / num2}`)
+
+console.log("Lindberg's Output from IS 645 HW3 Exercise 1");
