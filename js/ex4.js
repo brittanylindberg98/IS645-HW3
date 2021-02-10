@@ -16,3 +16,4 @@ while (count <= 2) {
 if (count > 2 ) {
     alert(`account is locked!You failed to enter the correct password ${count} times`)
 }
+console.log("Lindberg's Output from IS 645 HW3 Exercise 4");

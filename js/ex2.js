@@ -31,3 +31,5 @@ switch (DayEntered) {
 }
 console.log("You entered: "+ DayEntered)
 console.log("The following day is: " + FollowingDay)
+
+console.log("Lindberg's Output from IS 645 HW3 Exercise 2");

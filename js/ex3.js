@@ -10,4 +10,4 @@ console.log(`${num1} * ${num2} = ${num1 * num2}`)
 console.log(`${num1} * ${num2} = ${num1 * num2}`)
 console.log(`${num1} / ${num2} = ${num1 / num2}`)
 
-console.log("Lindberg's Output from IS 645 HW3 Exercise 1");
+console.log("Lindberg's Output from IS 645 HW3 Exercise 3");

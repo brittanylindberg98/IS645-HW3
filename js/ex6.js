@@ -39,3 +39,4 @@ else
 
 console.log("Time input: "+time);
 console.log("One second later: " + res1[0]+"h"+res1[1]+"m"+res1[2]+"s")
+console.log("Lindberg's Output from IS 645 HW3 Exercise 6");
