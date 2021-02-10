@@ -1,13 +1,41 @@
-public static void main(String[] args)
+var time = prompt("Time as three values: hours, minutes, seconds")
+
+var res = time.replace(/h|m|s/gi,":")
+
+var res1 = res.split(":")
+
+var carry=0
+
+if((parseInt(res1[2])+1)==60)
 {
-    Scanner in = new Scanner(System.in);
-    System.out.print("Input seconds: ");
-int seconds = in.nextInt(); 
-    int p1 = seconds % 60;
-    int p2 = seconds / 60;
-    int p3 = p2 % 60;
-    p2 = p2 / 60;
-    System.out.print( p2 + ":" + p3 + ":" + p1);
-System.out.print("\n");
-}    
+  res1[2]=0;
+  carry=1;
 }
+else
+{
+  res1[2]=parseInt(res1[2])+1;
+  carry=0;
+}
+if((parseInt(res1[1])+carry)==60)
+{
+  res1[1]=0;
+  carry=1;
+}
+else
+{
+  res1[1]=parseInt(res1[1])+carry;
+  carry=0;
+}
+if((parseInt(res1[0])+carry)==24)
+{
+  res1[0]=0;
+  carry=1;
+ }
+else
+{
+  res1[0]=parseInt(res1[0])+carry;
+  carry=0;
+}
+
+console.log("Time input: "+time);
+console.log("One second later: " + res1[0]+"h"+res1[1]+"m"+res1[2]+"s")
